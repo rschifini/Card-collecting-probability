@@ -31,6 +31,7 @@ This repository contains simulations in **R**:
 - Number of cards inside each pack: 5 
 - No rare cards, all have the same uniform probability
 
+
 ### Single person
 
 For Simulations: 4000
@@ -42,6 +43,7 @@ Trying to complete the collection single-handedly will not be easy:
 
 
 ![Figure 1](probabiliy%20density%20single%20person.jpeg?raw=true)
+
 *Figure 1: Probability density for a single person*
 
 ### Collaboration pays
@@ -59,9 +61,11 @@ Advantages:
     - Packs per person converges to 40 ( = 200 cards / 5 per pack ) when the number of people goes to infinity.
 
 ![Figure 2](Packs%20per%20group.jpeg?raw=true)
+
 *Figure 2: Average number of packs expected for each member in a group*
 
 ![Figure 3](probabilities_for_groups.jpeg?raw=true)
+
 *Figure 2: Probability density of the number of packs per person in a group*
 
 Note: one of the rules for groups is that no participant leaves the group when completing the collection. They keep buying a pack for the group to share.
