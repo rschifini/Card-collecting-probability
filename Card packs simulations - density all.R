@@ -38,16 +38,8 @@ for(persons in groups){
 df$packsPerPerson = df$opened / df$group
 df$group = as.factor(df$group)
 
-# p = ggplot(df, aes(y = group, x = packpsPerPerson)) +
-#   # xlim(0,400) +
-#   geom_density_ridges(
-#     scale = 5,
-#     jittered_points = TRUE,
-#     position = position_points_jitter(width = 0.05, height = 0),
-#     point_shape = '|', point_size = 3, point_alpha = 1, alpha = 0.7
-#   )
 
-p = ggplot(df, aes(x=packpsPerPerson, y=group, fill = group)) +
+p = ggplot(df, aes(x=packsPerPerson, y=group, fill = group)) +
   geom_density_ridges(
     rel_min_height = 0.01,
     aes(point_color = group, point_fill = group, point_shape = 20),
@@ -56,7 +48,7 @@ p = ggplot(df, aes(x=packpsPerPerson, y=group, fill = group)) +
   scale_point_color_hue(l = 40) +
   xlim(0,500) +
   theme_linedraw()+
+  theme(legend.position = "none")+
   labs(title = "Probability density for different groups", x = "Packs per person", y = "Persons in group")
-
 
 print(p)
