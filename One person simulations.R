@@ -31,5 +31,5 @@ for(k in 1:simulations){
 }
 
 hist(totalPacksOpened, breaks = 50, xlim = c(100,600), 
-     freq = F, ylim = c(0,.01), main = "Probability density of packs opened by one person")
+     freq = F, ylim = c(0,.01), main = "Probability density of packs opened by one person", xlab = "Packs")
 lines(density(totalPacksOpened, bw = 7), ylim = c(0, 0.01), xlim = c(100,600), col = "red")
